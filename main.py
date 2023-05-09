@@ -9,12 +9,12 @@ def route_main():
     res = requests.get('https://sports-api.named.com/v1.0/sports/soccer/games/11229398/broadcasts')
     print(res.text)
     
-    notification.notify(
-        title = 'test test',
-        message = '메시지 내용',
-        app_name = '테스트앱',
-        timeout = 10,
-    )
+    # notification.notify(
+    #     title = 'test test',
+    #     message = '메시지 내용',
+    #     app_name = '테스트앱',
+    #     timeout = 10,
+    # )
     return '<h1>Hello World!</h1>'
 
 if __name__ == "__main__":
